@@ -19,8 +19,11 @@ namespace Displaying_Triangles
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // variables declaration for the storage of shapes
             string pattern1 = "";
+            string pattern2 = "";
 
+            // Pattern 1
             for (int i = 1; i <= 10; i++)
             {
                 for (int j = 1; j <= i; j++)
@@ -30,17 +33,22 @@ namespace Displaying_Triangles
 
                 pattern1 += "\n";
             }
+
+            // displaying pattern 1 on message box
             MessageBox.Show(pattern1, "Pattern 1");
 
-            string pattern2 = "";
+            // Pattern 2
             for (int i = 10; i >= 1; i--)
             {
                 for (int j = 1; j <= i; j++)
                 {
                     pattern2 += "*";
                 }
+
                 pattern2 += "\n";
             }
+
+            // displaying pattern 2 on message box
             MessageBox.Show(pattern2, "Pattern 2");
         }
     }
